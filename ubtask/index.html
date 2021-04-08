@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unbranded Interview Task April 2021</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div id="msg-image-box"><span id="msg-text"></span></div>
+  <div id="msg-input-box"><form><input type="text" id="text" name="text" ><button class="js-change-text">Update Text</button></form></div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+  $(document).ready(() => {
+    let initialMsg = 'Happy Birthday';
+    const inputElement = $('#msg-input-box form input');
+
+    $('#msg-text').text(initialMsg);
+    inputElement.val(initialMsg);
+
+    $('#msg-input-box form').on('submit', evt => {
+      evt.preventDefault();
+      $('#msg-text').text(inputElement.val());
+      inputElement.val('');
+      inputElement.focus();
+    });
+  })
+</script>
+</body>
+</html>
