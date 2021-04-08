@@ -47,7 +47,7 @@ body {
     }
   
     #msg-image-box {
-      background-image: url("./assets/cutout2.png");
+      background-image: url("./assets/cutout3.png");
       background-repeat: no-repeat;
       background-size: contain;
       height: 650px;
@@ -63,6 +63,7 @@ body {
         font-weight: bold;
         height: 90%;
         writing-mode: vertical-lr;
+        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
     }
