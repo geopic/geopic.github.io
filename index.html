@@ -1,12 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>George Pickering | Portfolio</title>
-</head>
-<body>
-  <main><a href="https://www.github.com/geopic">GitHub profile</a></main>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>George Pickering | Portfolio</title>
+    <style>
+      body {
+        background-color: #fafafa;
+        line-height: 2rem;
+        margin: 0 auto;
+        max-width: 960px;
+        opacity: 1;
+        text-align: center;
+        transition: opacity 1s;
+      }
+
+      .body-hidden {
+        opacity: 0;
+      }
+
+      ul {
+        margin: 0 auto;
+        max-width: 640px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body class="body-hidden">
+    <header>
+      <h1>George Pickering | Portfolio</h1>
+      <p>Welcome to my portfolio page!</p>
+    </header>
+    <main>
+      <section>
+        <h1>Design Examples</h1>
+        <ul>
+          <li>One</li>
+          <li>Two</li>
+          <li>Three</li>
+        </ul>
+      </section>
+      <section>
+        <h1>'for-recruiters' repository</h1>
+        <p>
+          This has examples of code in <strong>PHP</strong>,
+          <strong>SQL</strong> and other languages used in the web development
+          industry.
+        </p>
+        <p>
+          <a href="https://github.com/geopic/for-recruiters"
+            >Click here to navigate to the repository on GitHub ➔</a
+          >
+        </p>
+      </section>
+      <section>
+        <h1>Personal projects</h1>
+        <ul>
+          <li>
+            <p>
+              <a href="https://github.com/geopic/sqlite-admin-panel"
+                >sqlite-admin-panel</a
+              >
+            </p>
+            <p>
+              sqlite-admin-panel is an administration panel for
+              <a href="https://www.sqlite.org/index.html">SQLite</a> databases.
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="https://github.com/geopic/store-buddy">store-buddy</a>
+            </p>
+            store-buddy is a portable, type-safe and well-documented wrapper for
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage"
+              >localStorage</a
+            >
+            and
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage"
+              >sessionStorage</a
+            >. Use one reference to a stored item in localStorage or
+            sessionStorage across your entire project, while ensuring that the
+            stored item's type and/or object structure is not changed, to
+            prevent unexpected behaviour and bugs.
+            <p></p>
+          </li>
+          <li>
+            <p><a href="https://github.com/geopic/xplan">xplan</a></p>
+            <p>
+              xplan is a site where a user can create a grid of squares, which
+              represent days to achieve a goal and/or establish a new habit.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section><p>Thank you for visiting my portfolio page!</p></section>
+    </main>
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        document.querySelector('body').classList.remove('body-hidden');
+      });
+    </script>
+  </body>
 </html>
